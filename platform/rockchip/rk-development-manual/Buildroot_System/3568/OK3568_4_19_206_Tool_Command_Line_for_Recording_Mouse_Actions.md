@@ -26,9 +26,9 @@ The evemu tool is a utility for Linux systems, used to simulate, record, and pro
 
 Go to the graphical configuration interface of the file system in the source code and select the evemu tool as “y”. Then re - compile the file system and burn rootfs.ext2 into the development board.
 
-![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png)
 
-![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png)
 
 Use the “evemu - record” command to record a mouse movement operation, and use “evemu - play” to play back the recorded movement.
 

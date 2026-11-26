@@ -16,11 +16,11 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 1\. Enter ls /sys/class/drm to check display devices.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Fixed_Resolution_Output/1752153189356_eb3d5c1f_0996_413f_ab2c_dff28c72dee2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_Resolution_Output/1752153189356_eb3d5c1f_0996_413f_ab2c_dff28c72dee2.png)
 
 2\. View supported resolutions.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Fixed_Resolution_Output/1752153209700_b7415ae3_a77e_4d53_9ab7_3cbb6af182a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_Resolution_Output/1752153209700_b7415ae3_a77e_4d53_9ab7_3cbb6af182a7.png)
 
 Modify the file /etc/xdg/weston/weston.ini:
 

@@ -34,7 +34,7 @@ export 	PATH=$PATH:/home/forlinx/ok3568/OK3568-linux-source/prebuilts/gcc/linux-
 
 1\. Set the board IP and port number;
 
-![Image](./images/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server/1719647266927_284d29e6_1d83_4014_8c57_35a1202b8c98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server/1719647266927_284d29e6_1d83_4014_8c57_35a1202b8c98.png)
 
 2\. Set the IP address of the virtual machine to ensure that the development board IP can be pinged.
 
@@ -48,7 +48,7 @@ aarch64-linux-gnu-gcc -g gpiotest.c -o gpiotest
 
 4\. Copy to the development board;
 
-![Image](./images/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server/1719647267133_2a7a7827_19c5_4c4a_92a9_5e3188f26a03.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server/1719647267133_2a7a7827_19c5_4c4a_92a9_5e3188f26a03.png)
 
 Copy the gpiotest executable file to the development board and execute the following command:
 
@@ -85,4 +85,4 @@ At this point, you can debug according to your needs. Here are some common comma
 
 (7) Q: Exit. Enter this command to exit gdbserver on the development board.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server/1719647267357_1f3f469f_0d05_4f19_8b2c_b491ac4ff249.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server/1719647267357_1f3f469f_0d05_4f19_8b2c_b491ac4ff249.png)

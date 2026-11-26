@@ -22,13 +22,13 @@ In the project, the 3568 two-channel native gigabit network port is not enough, 
 
 Since the 8111H is compatible with the 8168, the source code files to be added are for the 8168 driver. First, copy the r8168 folder to OK3568-linux-source/kernel/drivers/net/ethernet/realtek/.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748587944609_cfed8fe9_de5b_47a1_be9a_0aa3ae9bbd78.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748587944609_cfed8fe9_de5b_47a1_be9a_0aa3ae9bbd78.png)
 
 Then, add the line obj-y += r8168/ at the end of the Makefile in this folder, as shown in the figure below.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588043950_ada267b2_8492_4a01_b943_a0acf8d42505.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588043950_ada267b2_8492_4a01_b943_a0acf8d42505.png)
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588060026_0facf08f_3a5f_47aa_b8fa_8ebc534407c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588060026_0facf08f_3a5f_47aa_b8fa_8ebc534407c2.png)
 
 **2\. Modify the Makefile in the 8168 Folder**
 
@@ -38,19 +38,19 @@ obj-y := r8168.o
 
 r8168-objs := r8168\_n.o r8168\_asf.o rtl\_eeprom.o rtltool.o
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588375209_a7a5e7cd_0feb_4db8_bef3_72ec0cac4adc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588375209_a7a5e7cd_0feb_4db8_bef3_72ec0cac4adc.png)
 
 **3\. Modify the Configuration File**
 
 Navigate to OK3568-linux-source/kernel/arch/arm64/configs/ and change the line # CONFIG\_NET\_VENDOR\_REALTEK is not set in OK3568-C-linux\_defconfig to:
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588439867_0af25406_4b2d_45a2_a388_9ae98206fe8d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588439867_0af25406_4b2d_45a2_a388_9ae98206fe8d.png)
 
 **4\. Compile and Flash**
 
 Enter the source code directory, execute ./build.sh kernel, wait for the compilation to complete, and then flash boot.img to the development board.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588492646_434f39bd_da6d_4933_b10f_5e43e7e6a8b0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H/1748588492646_434f39bd_da6d_4933_b10f_5e43e7e6a8b0.png)
 
 **5\. Attachments**
 

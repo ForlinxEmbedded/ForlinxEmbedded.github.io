@@ -38,23 +38,23 @@ Copy the generated PPM file to the directory OK3568-linux-source/kernel/drivers/
 
 Rename it to end with "\_clut224.ppm".
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646689807_dbeb0b99_87f7_4e06_9c69_da9ff4de6e7e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646689807_dbeb0b99_87f7_4e06_9c69_da9ff4de6e7e.png)
 
 Modify Makefile.
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690063_31651eed_4a11_4b95_82fb_35d101e28b94.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690063_31651eed_4a11_4b95_82fb_35d101e28b94.png)
 
 Modify logo.c.
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690353_186ed452_c48f_45cc_b951_d392145508c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690353_186ed452_c48f_45cc_b951_d392145508c0.png)
 
 Modify OK3568-linux-source/kernel/include/linux/linux\_logo.h.
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690620_509927be_67ed_42ce_88ff_d47084a858c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690620_509927be_67ed_42ce_88ff_d47084a858c7.png)
 
 Modify OK3568-linux-source/arch/arm64/configs/OK3568-C-linux\_defconfig to enable the kernel logo.
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690837_fdea6a2f_42ac_4598_9f0f_b7fc4b31091c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690837_fdea6a2f_42ac_4598_9f0f_b7fc4b31091c.png)
 
 diff --git a/arch/arm64/configs/OK3568-C-linux\_defconfig b/arch/arm64/configs/OK3568-C-linux\_defconfig
 
@@ -162,7 +162,7 @@ OK3568-linux-source/kernel/drivers/video/fbdev/core/fbmem.c
 
 Adjust logo position and continuous display
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691041_b1ec253e_4571_410c_a55e_b269007c994b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691041_b1ec253e_4571_410c_a55e_b269007c994b.png)
 
 diff --git a/drivers/video/fbdev/core/fbcon.c b/drivers/video/fbdev/core/fbcon.c
 
@@ -235,7 +235,7 @@ static int fbcon\_switch(struct vc\_data \*vc)
     
                               vc->vc_size_row * (vc->vc_bottom -
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691233_d2dc9c41_0ba3_4221_aa03_6af64936d8df.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691233_d2dc9c41_0ba3_4221_aa03_6af64936d8df.png)
 
 diff --git a/drivers/video/fbdev/core/fbmem.c b/drivers/video/fbdev/core/fbmem.c
 
@@ -319,7 +319,7 @@ static void \*fb\_seq\_start(struct seq\_file \*m, loff\_t \*pos)
 
 Modify Ok3568-linux-source/kernel/drivers/video/fbdev/core/bitblit.c and remove the cursor
 
-![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691442_1f4a1b44_48bf_44f6_a5e3_a9f8f43b00ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691442_1f4a1b44_48bf_44f6_a5e3_a9f8f43b00ae.png)
 
 iff --git a/drivers/video/fbdev/core/bitblit.c b/drivers/video/fbdev/core/bitblit.c
 

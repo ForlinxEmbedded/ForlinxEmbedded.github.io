@@ -24,7 +24,7 @@ You can use the command `mount rootfs.ext2 target/` to mount the filesystem for 
 
 Flash the root.ext2 file to the board step by step.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_User_Programs/1719647401032_2f4cb354_0c36_401d_b58b_37ba149fbd26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_User_Programs/1719647401032_2f4cb354_0c36_401d_b58b_37ba149fbd26.png)
 
 If only the filesystem has been modified and an `update.img` is needed, you can execute `./build.sh updateimg` in the `OK3568-linux-source` directory to generate an `update.img` based on the current `rootfs.ext2`. Then, use the `update.img` for flashing.
 

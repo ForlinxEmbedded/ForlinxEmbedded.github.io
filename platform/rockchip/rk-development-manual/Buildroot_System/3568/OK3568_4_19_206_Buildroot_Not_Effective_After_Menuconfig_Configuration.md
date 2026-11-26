@@ -63,7 +63,7 @@ umask 0022 && make -C /home/forlinx/3568/OK3568-linux-source/buildroot O=/home/f
 
 Save the selected configuration after configuring the menuconfig of the buildroot.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration/1722577553049_d174d22f_b950_4d30_9f73_0e6ce3e67dfa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration/1722577553049_d174d22f_b950_4d30_9f73_0e6ce3e67dfa.png)
 
 ```plain
 *** End of the configuration.

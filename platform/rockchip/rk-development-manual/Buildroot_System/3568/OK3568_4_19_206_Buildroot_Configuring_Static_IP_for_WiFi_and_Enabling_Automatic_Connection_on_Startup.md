@@ -76,7 +76,7 @@ default         192.168.109.149 0.0.0.0         UG    0      0        0 mlan0
 
 Below, the ssid is the Wi-Fi that will connect automatically, and psk is the password:
 
-![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731567592361_4915542f_8728_473b_9d81_e1ec4d87e1eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731567592361_4915542f_8728_473b_9d81_e1ec4d87e1eb.png)
 
 3. Modify the interfaces file:
 
@@ -92,7 +92,7 @@ Add the address, netmask, and gateway obtained in the first step to the mlan0 se
 
 **Note: The address can be set to one in the same network segment. The detected address is 192.168.109.47, but it is set to 192.168.109.66.**
 
-![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731998030917_e597ea17_1b0b_4574_a7de_be28e9b76a8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731998030917_e597ea17_1b0b_4574_a7de_be28e9b76a8a.png)
 
 Add the following code:
 
@@ -109,7 +109,7 @@ The last line ensures that the configuration from wpa\_supplicant.conf is read e
 
 After completing these settings, restart the development board, and you will see that the mlan0 IP has been changed to 192.168.109.66.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731576010878_7078add2_6a4e_41df_a976_c015f2e8a99a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731576010878_7078add2_6a4e_41df_a976_c015f2e8a99a.png)
 
 **Verification**
 
@@ -137,7 +137,7 @@ Add a startup script:
 [root@ok3568:/]# vi /etc/init.d/S99-autowifi.sh
 ```
 
-![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731569548128_f1e07737_c50f_4d39_998a_72d98ab091e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731569548128_f1e07737_c50f_4d39_998a_72d98ab091e2.png)
 
 Grant executable permissions:
 

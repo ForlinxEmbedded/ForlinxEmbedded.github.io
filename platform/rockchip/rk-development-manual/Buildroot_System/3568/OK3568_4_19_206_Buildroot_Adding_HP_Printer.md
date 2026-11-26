@@ -224,13 +224,13 @@ forlinx@ubuntu:~$ hp-plugin
 //Install the hpplugin plug-in
 ```
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002658150_3151c1ca_8725_4b3c_8a19_169b30119577.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002658150_3151c1ca_8725_4b3c_8a19_169b30119577.png)
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002728296_280004d8_8780_467c_9dc6_1738993c0c06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002728296_280004d8_8780_467c_9dc6_1738993c0c06.png)
 
 Then continue until the installation is complete.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002776664_996cfd94_309b_44ae_a341_e6bf76206c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002776664_996cfd94_309b_44ae_a341_e6bf76206c45.png)
 
 ```plain
 forlinx@ubuntu:~$ hp-setup 

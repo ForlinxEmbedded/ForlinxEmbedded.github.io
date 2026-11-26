@@ -28,7 +28,7 @@ forlinx@ubuntu18:~/3568.4.19/OK3568-linux-source$ vi buildroot/configs/OK3568_de
 
 Add BR\_PACKAGE\_NGINX=y
 
-![Image](./images/OK3588_4_19_206_Buildroot_Nginx_Installation/1723445582697_11a7f8d5_5c84_4784_9328_0a9c9623378a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3588_4_19_206_Buildroot_Nginx_Installation/1723445582697_11a7f8d5_5c84_4784_9328_0a9c9623378a.png)
 
 Execute./build. sh build root to compile filesystem.
 

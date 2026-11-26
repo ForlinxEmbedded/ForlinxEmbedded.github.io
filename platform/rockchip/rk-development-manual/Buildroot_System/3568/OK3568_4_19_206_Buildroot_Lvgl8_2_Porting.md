@@ -149,7 +149,7 @@ Begin by executing the/etc/init. D/S50weston stop command.
 
 The display effect of running the demo is as follows:
 
-![Image](./images/OK3568_4_19_206_Buildroot_Lvgl8_2_Porting/1735200432204_52ed45aa_5cc7_4a83_b516_f988046aa8fd.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Lvgl8_2_Porting/1735200432204_52ed45aa_5cc7_4a83_b516_f988046aa8fd.jpeg)
 
 4\. Attachments
 

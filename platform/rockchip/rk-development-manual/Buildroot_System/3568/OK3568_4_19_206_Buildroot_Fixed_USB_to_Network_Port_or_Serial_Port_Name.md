@@ -26,13 +26,13 @@ udevadm info --attribute-walk --path=$(udevadm info --query=path --name=<font st
 
 udevadm info --attribute-walk --path=$(udevadm info --query=path --name=<font style="color:#FF0000;">/dev/usb-serial1</font>)
 
-![Image](./images/OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name/1719646905604_a945622e_3f7f_438b_9130_9d74877cefea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name/1719646905604_a945622e_3f7f_438b_9130_9d74877cefea.png)
 
 2\. Select a few rules from the above figure:
 
 Create/etc/udev/rules.d/99rename.rules files
 
-![Image](./images/OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name/1719646905795_ff261798_5d26_4e4f_b3eb_4e311498862c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name/1719646905795_ff261798_5d26_4e4f_b3eb_4e311498862c.png)
 
 3\. Add executable permissions
 

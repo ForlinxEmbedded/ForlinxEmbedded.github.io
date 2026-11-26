@@ -22,4 +22,4 @@ KERNEL is the original name.
 
 NAME is the modified name.
 
-![Image](./images/OK3568_4_19_206_Buildroot_WIFI_Renaming_Operation_Method/1719646277855_fb44ad77_18f2_427f_8682_9b866c7c1d58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_WIFI_Renaming_Operation_Method/1719646277855_fb44ad77_18f2_427f_8682_9b866c7c1d58.png)

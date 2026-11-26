@@ -45,7 +45,7 @@ forlinx@ubuntu:~/3568.5.10/OK3568_Linux_fs/buildroot$ make menuconfig
 
 Locate "Path to the users tables" under "System configuration," and enter system/user\_table.txt.
 
-![Image](./images/OK3588_Linux_5_10_66_Buildroot_Adding_New_User/1722997286314_7ca45733_b275_4f4c_a13a_7e2968588400.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_66_Buildroot_Adding_New_User/1722997286314_7ca45733_b275_4f4c_a13a_7e2968588400.png)
 
 Save the changes and exit.
 

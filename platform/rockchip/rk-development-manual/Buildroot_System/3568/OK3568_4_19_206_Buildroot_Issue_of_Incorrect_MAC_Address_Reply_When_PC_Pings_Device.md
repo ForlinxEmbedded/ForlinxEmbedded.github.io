@@ -24,7 +24,7 @@ Solve the problem of incorrect Mac address reply when pinging devices from a com
 
 PC side configures multiple IPs: 192.168.31.11 and 192.168.36.11
 
-![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732583775787_d68d4883_50af_4567_863f_63ae849b1b5a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732583775787_d68d4883_50af_4567_863f_63ae849b1b5a.png)
 
 Device side IP configuration:
 
@@ -32,7 +32,7 @@ eth2 : 192.168.31.10
 
 eth3 : 192.168.36.10
 
-![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732583974502_646ec277_526b_439f_956b_c75816cf23d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732583974502_646ec277_526b_439f_956b_c75816cf23d4.png)
 
 2\. Connection Setup Problem
 
@@ -40,13 +40,13 @@ A local network is created using a router, with the PC connected and one network
 
 Use the PC to ping eth3, which is not connected to the local network.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732586293318_312fe718_5a2e_445b_90ca_15c7fbdc5ada.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732586293318_312fe718_5a2e_445b_90ca_15c7fbdc5ada.png)
 
 **Issues Encountered**
 
 Normally, if the ARP cache does not store the MAC and IP mapping, a broadcast message is sent to locate the device with that IP, and the device responds with its MAC address. However, when the PC pings the IP 192.168.36.10, the MAC address captured in the response is that of eth2, which is connected to the local network.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732587129047_e91173e4_dd16_479c_9d91_41b687e04a79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732587129047_e91173e4_dd16_479c_9d91_41b687e04a79.png)
 
 After using ifconfig eth2 -arp to disable ARP forwarding on eth2, pinging 192.168.36.10 again revealed that the incorrect MAC address was no longer being responded to in the captured packets. However, eth2 became unpingable, making this method impractical.
 
@@ -77,4 +77,4 @@ Change this value to 1, and then follow the aforementioned method to perform the
 1
 ```
 
-![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732587439246_4e47b50d_3057_4f24_9fb8_7f3778d89178.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732587439246_4e47b50d_3057_4f24_9fb8_7f3778d89178.png)

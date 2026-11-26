@@ -22,7 +22,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 FIT-PCIE-SATA V1.0 adapter board (converts PCIe 2.0 interface to dual SATA 2.0 ports)
 
-![Image](./images/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161368_b8033fb6_0f7c_4f04_88b0_8841bc918546.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161368_b8033fb6_0f7c_4f04_88b0_8841bc918546.jpeg)
 
 ### Software Configuration
 
@@ -74,8 +74,8 @@ Separately flash /OK3568-linux-source/kernel/boot.img
 
 Write data:
 
-![Image](./images/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161624_9c4aaf9e_f83d_401a_ae2a_c7d5408982e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161624_9c4aaf9e_f83d_401a_ae2a_c7d5408982e2.png)
 
 Read data:
 
-![Image](./images/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161810_f48384dd_bf03_46db_8468_949c156fa825.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161810_f48384dd_bf03_46db_8468_949c156fa825.png)

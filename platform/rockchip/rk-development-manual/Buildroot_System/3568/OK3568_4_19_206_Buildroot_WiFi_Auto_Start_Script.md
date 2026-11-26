@@ -34,4 +34,4 @@ chmod +x S99mywifi.sh
 
 If the script displays the information shown in the red box, it indicates a successful connection.
 
-![Image](./images/OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script/1719646274543_6dc783de_6c7d_4d6d_ab5d_125be9d190ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script/1719646274543_6dc783de_6c7d_4d6d_ab5d_125be9d190ea.png)

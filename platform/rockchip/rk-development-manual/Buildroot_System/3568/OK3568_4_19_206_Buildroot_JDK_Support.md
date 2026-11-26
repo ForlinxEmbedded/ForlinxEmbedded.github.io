@@ -44,7 +44,7 @@ jdk-8-linux-aarch64-demos.tar.gz
     
     tar xvf jdk-8u351-linux-aarch64.tar
     
-    ![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083092_036d29c4_fb24_4f98_a9c5_189b2788fff6.png)
+    ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_JDK_Support/1719646083092_036d29c4_fb24_4f98_a9c5_189b2788fff6.png)
 
 3\. Append the Following to /etc/profile (at the end of the file):
 
@@ -60,7 +60,7 @@ jdk-8-linux-aarch64-demos.tar.gz
 
 In theory, it should appear:
 
-![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083307_b7ecdda5_c1f7_4e51_9be6_b3542ec36a71.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_JDK_Support/1719646083307_b7ecdda5_c1f7_4e51_9be6_b3542ec36a71.png)
 
 5\. Verification
 
@@ -72,7 +72,7 @@ Extract it to jdk1.8.0\_341.
 
 Test (Here, due to version mismatch between the demo and JDK, two files from jdk1.8.0\_341 were copied to jdk1.8.0\_351):
 
-![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083512_dee2ad25_4f89_4c55_b5eb_23ad4077151b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_JDK_Support/1719646083512_dee2ad25_4f89_4c55_b5eb_23ad4077151b.png)
 
 The test programs should now work correctly.
 

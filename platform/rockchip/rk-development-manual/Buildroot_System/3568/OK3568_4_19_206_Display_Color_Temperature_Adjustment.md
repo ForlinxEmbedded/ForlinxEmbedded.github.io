@@ -18,7 +18,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 Modify the default values in the driver file kernel/drivers/gpu/drm/rockchip/rockchip\_drm\_drv.c:
 
-![Image](./images/OK3568_4_19_206_Display_Color_Temperature_Adjustment/1719646695507_6c2a36dd_3fa4_4b60_aa30_04ad58eb3a15.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Display_Color_Temperature_Adjustment/1719646695507_6c2a36dd_3fa4_4b60_aa30_04ad58eb3a15.png)
 
 hue corresponds to color tone
 
@@ -34,7 +34,7 @@ You can use the modetest command in the terminal to test appropriate values:
 
 For example, if an LVDS display is connected, its ID may be 152.
 
-![Image](./images/OK3568_4_19_206_Display_Color_Temperature_Adjustment/1719646695682_fa62a025_f659_4dd1_ae03_386b36a3d26e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Display_Color_Temperature_Adjustment/1719646695682_fa62a025_f659_4dd1_ae03_386b36a3d26e.png)
 
 2. Adjust parameters via command
 

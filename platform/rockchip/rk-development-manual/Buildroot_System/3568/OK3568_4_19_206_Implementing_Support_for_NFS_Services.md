@@ -26,7 +26,7 @@ Open the file /OK3568-linux-source/buildroot/configs/OK3568\_defconfig, and add
 
 <font style="color:#000000;">BR2\_PACKAGE\_NFS\_UTILS\_RPC\_NFSD=y BR2\_PACKAGE\_NFS\_UTILS\_RPC\_RQUOTAD=y</font>
 
-![Image](./images/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1719646560973_5dc78252_004f_4c54_ab4d_655a7fbeafe6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1719646560973_5dc78252_004f_4c54_ab4d_655a7fbeafe6.png)
 
 Then compile according to the./build. sh buildroot shown above.
 
@@ -34,10 +34,10 @@ When compiling, choose whether to overwrite the original config file, do not ent
 
 Results:
 
-![Image](./images/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1719646561206_0199043d_3077_4f9b_95a5_98f7b36f38ba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1719646561206_0199043d_3077_4f9b_95a5_98f7b36f38ba.png)
 
 And then the generated rootfs. IMG is separately programmed into the development board.
 
 Type cd sbin in the development board and then ls to view it. As shown in the following figure, when you see mount.nfs, it indicates that the NFS service has been successfully started.
 
-![Image](./images/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1732070183020_a4714234_fab6_4500_b9a6_349dbe71eb1a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1732070183020_a4714234_fab6_4500_b9a6_349dbe71eb1a.png)

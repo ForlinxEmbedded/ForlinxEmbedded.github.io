@@ -46,11 +46,11 @@ make busybox-menuconfig
 
 In the graphical interface, locate the two marked options and enable them.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration/1722501507457_da40b882_2d07_43b1_a270_f774b9046711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration/1722501507457_da40b882_2d07_43b1_a270_f774b9046711.png)
 
 Press Esc to exit and select Yes to save the configuration.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration/1722501603729_f5182bb8_3947_45e0_a590_3423f86d701a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration/1722501603729_f5182bb8_3947_45e0_a590_3423f86d701a.png)
 
 Regenerate the file system.
 

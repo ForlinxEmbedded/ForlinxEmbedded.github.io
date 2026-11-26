@@ -18,20 +18,20 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 Modify the file at the following path:
 
-![Image](./images/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875160_a2d1f3f6_4634_4b96_a28b_5bfb20ca57cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875160_a2d1f3f6_4634_4b96_a28b_5bfb20ca57cf.png)
 
 Comment out the watchdog countdown code.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875356_c27aa631_9990_4017_8481_298524e1c987.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875356_c27aa631_9990_4017_8481_298524e1c987.png)
 
 Save the changes and compile U-Boot separately by executing ./build.sh uboot.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875556_16ee68fc_7131_49ab_ae57_d035115040da.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875556_16ee68fc_7131_49ab_ae57_d035115040da.png)
 
 After compilation, an uboot.img file will be generated in the u-boot folder.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875733_b1459959_2d0f_4a2f_ab22_f289a4f74342.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875733_b1459959_2d0f_4a2f_ab22_f289a4f74342.png)
 
 Then, flash the uboot.img file to the development board individually. The flashing address is 0x00004000. After connecting the flashing tool, click on the device partition table, and the U-Boot flashing address will be automatically loaded. Then, click on the small box next to "uboot", select the uboot.img file compiled above, and click execute to proceed with the flashing.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875932_73ef6226_cb53_42b4_9d80_164a2a43b145.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot/1719646875932_73ef6226_cb53_42b4_9d80_164a2a43b145.png)

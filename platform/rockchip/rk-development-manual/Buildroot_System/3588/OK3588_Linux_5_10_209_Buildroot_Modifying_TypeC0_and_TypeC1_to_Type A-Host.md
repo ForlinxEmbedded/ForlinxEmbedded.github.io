@@ -285,7 +285,7 @@ Apply the above patch to the device tree file. Take the device tree file of 3588
 
 Apply the patch file to the kernel:
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248800750_b2a35198_a441_4baf_88da_5c46ac954ab3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248800750_b2a35198_a441_4baf_88da_5c46ac954ab3.png)
 
 Compile the kernel and burn the boot.img image to verify the function.
 
@@ -293,11 +293,11 @@ Compile the kernel and burn the boot.img image to verify the function.
 
 To test the Type - A - Host function on the Forlinx carrier board, an external Type - A socket is required. The connections are as follows:
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248830282_78d5ab70_a0d3_4448_b706_28a079396fc1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248830282_78d5ab70_a0d3_4448_b706_28a079396fc1.png)
 
 At the Type - C0 port, connect the six wires in the above red - framed area, plus the power line and GND.
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248840655_fa600cd7_3213_45c5_a050_abe1cb845d34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248840655_fa600cd7_3213_45c5_a050_abe1cb845d34.png)
 
 The same goes for Type - C1.
 
@@ -311,20 +311,20 @@ Update the boot to the SoM. With the hardware modifications completed, insert a 
 
 Use`fdisk -l`commands to query the USB flash drive.
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248931403_adfa9e6c_dab8_46eb_920d_f97365bc87cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248931403_adfa9e6c_dab8_46eb_920d_f97365bc87cb.png)
 
 You can see that the USB flash drive has been recognized.
 
 Open /run/media/sda1, and you can see that the USB flash drive has been successfully mounted.
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248946150_ac09e7f4_70f8_4494_a1f6_6737d4abe18a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248946150_ac09e7f4_70f8_4494_a1f6_6737d4abe18a.png)
 
 3.2 Type - C1
 
 `fdisk -l` Query the USB flash drive.
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248961965_ff8bde1e_38fb_4307_a199_b436f68f7d0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248961965_ff8bde1e_38fb_4307_a199_b436f68f7d0e.png)
 
 Open /run/media/sdb1, and you can see that the USB flash drive has been successfully mounted.
 
-![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248974799_c788b765_f1c8_42f8_a425_a6165f23761c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248974799_c788b765_f1c8_42f8_a425_a6165f23761c.png)

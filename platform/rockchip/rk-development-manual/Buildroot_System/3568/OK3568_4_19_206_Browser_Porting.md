@@ -28,4 +28,4 @@ Written using qwidget, you can try to use the quick below to make a browser, and
 
 The source code of this browser can be compiled as a regular Qt program by following the instructions in the compilation manual.
 
-**Note: Opening the source code in QtCreator may trigger syntax errors due to differences in syntax usage between versions, but this does not affect the actual compilation process.**![Image](./images/OK3568_4_19_206_Browser_Porting/1724375293123_5b336fbd_a4b8_4565_88b2_33f39d175e50.png)
+**Note: Opening the source code in QtCreator may trigger syntax errors due to differences in syntax usage between versions, but this does not affect the actual compilation process.**![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Browser_Porting/1724375293123_5b336fbd_a4b8_4565_88b2_33f39d175e50.png)

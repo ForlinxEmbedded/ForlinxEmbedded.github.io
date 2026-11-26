@@ -22,13 +22,13 @@ To modify the device tree file:
 
 Comment out LVDS \_ backlight nodes.
 
-![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647124654_ab8d20fa_7801_4d09_80b2_f689b0b80032.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647124654_ab8d20fa_7801_4d09_80b2_f689b0b80032.png)
 
-![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647124881_98a73fbf_2359_49fa_b4fc_29c7d83e2565.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647124881_98a73fbf_2359_49fa_b4fc_29c7d83e2565.png)
 
 Comment out backlight.
 
-![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125162_14a9ffa0_551c_4be6_8f89_cf6bf35a0284.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125162_14a9ffa0_551c_4be6_8f89_cf6bf35a0284.png)
 
 Compile the kernel input./build. sh kernel command.
 
@@ -70,6 +70,6 @@ Turn off the PWM.
 
 <font style="color:#000000;">echo 0 > /sys/class/pwm/pwmchip2/pwm0/enable</font>
 
-![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125365_34f99ac5_c079_4af3_b8c6_2be8eb31fb67.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125365_34f99ac5_c079_4af3_b8c6_2be8eb31fb67.png)
 
-![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125581_665cd276_a4f3_4f71_9e24_1c68c94e2f43.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125581_665cd276_a4f3_4f71_9e24_1c68c94e2f43.png)
