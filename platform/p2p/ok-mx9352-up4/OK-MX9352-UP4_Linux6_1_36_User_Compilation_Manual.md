@@ -1026,7 +1026,7 @@ Set the compilation environment variables.
 forlinx@ubuntu:~$ . ok-mx93/OKMX93-linux-sdk/environment-setup-aarch64-toolchain
 ```
 
-Using Folinx provided Qt official serial port test program as an example to demonstrate command-line Qt program compilation:
+Using Forlinx provided Qt official serial port test program as an example to demonstrate command-line Qt program compilation:
 
 ```bash
 forlinx@ubuntu:~$ cd /home/forlinx/ok-mx93/OKMX93-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog

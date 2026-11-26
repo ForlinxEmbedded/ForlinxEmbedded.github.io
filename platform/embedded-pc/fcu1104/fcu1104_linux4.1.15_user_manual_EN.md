@@ -3,7 +3,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 ## Copyright
 
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+The copyright of this manual belongs to Baoding Forlinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
 
@@ -311,7 +311,7 @@ sendTotal=   60 num =    5 send = Forlinx test
 sendTotal=   72 num =    6 send = Forlinx test
 sendTotal=   84 num =    7 send = Forlinx test
 sendTotal=   96 num =    8 send = Forlinx test
-recvTotal=   9 num =  1 recv = Folinx ok
+recvTotal=   9 num =  1 recv = Forlinx ok
 466f6c696e78206f6b
 sendTotal=  108 num =    9 send = Forlinx test
 ^C
