@@ -49,21 +49,21 @@ Applications include:
 
 **T527 Series Application Processor Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083269105-4756d6e9-b30b-49fe-a736-d8d35620fb48.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083269105_4756d6e9_b30b_49fe_a736_d8d35620fb48.png)
 
 ## 2 FET527-C SoM Introduction
 
 ### 2.1 FET527-C SoM Appearance
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1720083223538-34a1b464-e382-4d86-aa44-36b21e38dba9.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083223538_34a1b464_e382_4d86_aa44_36b21e38dba9.jpeg)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1720083223894-496ca9fe-3e77-485b-90ad-0a16672b57e6.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083223894_496ca9fe_3e77_485b_90ad_0a16672b57e6.jpeg)
 
 **Back**
 
 ### 2.2 FET527-C SoM Dimensions
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083224210-224b95f0-79a2-4f95-b660-8bb46aae4177.png) ![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083224368-f41b6fc3-34a9-4a8d-a6df-785c4c56986f.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1732777917855-1c268f9a-0f6e-4592-bf79-e613e163bb56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224210_224b95f0_79a2_4f95_b660_8bb46aae4177.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224368_f41b6fc3_34a9_4a8d_a6df_785c4c56986f.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1732777917855_1c268f9a_0f6e_4592_bf79_e613e163bb56.png)
 
 ![](1795749537854-6.png)
 
@@ -77,7 +77,7 @@ To secure the SoM to the carrier board, use the recommended M2 SMD nuts (5.56 mm
 
 Refer to the development board design and the figures below for SMD nut specifications:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055814219-26674965-242f-4a82-9c44-743672b7717c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720055814219_26674965_242f_4a82_9c44_743672b7717c.png)
 
 ![](1795749537854-8.png)
 
@@ -173,9 +173,9 @@ The values in this table are based on the hardware design or theoretical process
 #### 2.5.1 FET527-C SoM Pin Schematic Diagram
 
 ![](1721197352551-0105554a-7581-4aca-87ba-d60297f315a9.png)
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721197358610-2b228097-0f30-4858-ac8d-b3d5874db65a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197358610_2b228097_0f30_4858_ac8d_b3d5874db65a.png)
 ![](1721197365179-4403f109-1037-44ce-beab-1968dd0424ab.png)
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721197371652-05757a9c-bfa4-4c62-855a-14a7de511987.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197371652_05757a9c_bfa4_4c62_855a_14a7de511987.png)
 
 #### 2.5.2 FET527-C SoM Pin Function Description
 For interface expansion, refer to the "FET527N-C Pin Multiplexing Table". For further details, consult the processor datasheet, reference manual, and related documentation.
@@ -204,7 +204,7 @@ For interface expansion, refer to the "FET527N-C Pin Multiplexing Table". For fu
 
 The FET527-C SoM integrates power supply, reset, and storage circuitry, minimizing external circuit requirements. A minimal system requires only a 5 V power supply, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721197379781-d2984d44-c346-4a60-b5bd-004edf0a97af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197379781_d2984d44_c346_4a60_b5bd_004edf0a97af.png)
 
 Refer to Chapter 6 for the minimal system schematic. In addition to the minimal system, provide a debug serial port and a system programming port to verify system startup. Add other required functions according to the default SoM interface definitions provided by Forlinx.
 
@@ -215,10 +215,10 @@ For the design of the SoM peripheral circuits, refer to Section 3.5 "OK527x-C Ca
 ### 3.1 OK527x-C Development Board Interface Diagram
 The Forlinx OK527x-C development platform connects the SoM to the carrier board through board-to-board connectors. The main interfaces are shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1720083237373-8b95995e-18ee-4914-b1ba-3f6b54baf923.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083237373_8b95995e_18ee_4914_b1ba_3f6b54baf923.jpeg)
 
 ### 3.2 OK527x-C Development Board Dimensions
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083237787-0bd1cfcd-6435-4bd2-be5e-fd405369957d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083237787_0bd1cfcd_6435_4bd2_be5e_fd405369957d.png)
 
 PCB dimensions: 130 mm×190 mm.
 
@@ -275,7 +275,7 @@ The OK527x-C carrier board provides two 3.2 mm mounting holes for a heatsink. In
 **Note: Component reference designators marked with "_NC" in the figures below indicate that the component is not soldered by default.**
 
 #### 3.5.1 Carrier Board Power Supply
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083238084-6d79c69e-7790-4bd3-b147-ec32af084e33.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083238084_6d79c69e_7790_4bd3_b147_ec32af084e33.png)
 
 A 12 V adapter supplies power to the development board through connector P5. VDD_5 V powers the SoM. After startup, the SoM outputs VDD33 to enable U5 and U9 on the carrier board.
 
@@ -302,9 +302,9 @@ The TF card has boot priority over eMMC. If a TF card is inserted during normal 
 Press AP-RESET to reset and restart the system. Press FEL to enter forced upgrade mode for system programming over USB from a PC. Use PWRON to power the system on or off.
 
 #### 3.5.4 Debug Interfaces
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083238754-52161a71-5b65-4ffe-8d4b-8396838bd80c.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083238950-3c23ef98-ee64-4a52-8866-3f556e16aade.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083238754_52161a71_5b65_4ffe_8d4b_8396838bd80c.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083238950_3c23ef98_ee64_4a52_8866_3f556e16aade.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083239131-c59795f0-44e2-415f-bd6a-ed57546a554d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083239681-e81a9a17-4498-43a5-a451-04ac85fc879d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083239131_c59795f0_44e2_415f_bd6a_ed57546a554d.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083239681_e81a9a17_4498_43a5_a451_04ac85fc879d.png)
 
 The SoM provides three debug serial ports: UART0 for CPUX, S-UART1 for CPUS, and S-UART0 for DSP/RISC-V.
 
@@ -324,12 +324,12 @@ To access the debug serial port:
 - **Do not repurpose the three debug serial ports for general serial communication or other functions.**
 
 #### 3.5.5 JTAG Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083239884-f05f835c-e2ee-479e-a646-524afa77c8af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083239884_f05f835c_e2ee_479e_a646_524afa77c8af.png)
 
 The development board exposes the CPUX, CPUS, and DSP/RISC-V JTAG interfaces through a 2 × 7 box header with a 2.0 mm pitch, consistent with the official reference design. The official dedicated emulator supports all three cores.
 
 #### 3.5.6 TF Card
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083240112-a6024e78-7d58-41e1-ac0a-d97b52d03b01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083240112_a6024e78_7d58_41e1_ac0a_d97b52d03b01.png)
 
 The TF card interface uses the processor SDC0 channel. The TF card must be powered by the VDD33 output from the SoM.
 
@@ -340,7 +340,7 @@ The TF card interface uses the processor SDC0 channel. The TF card must be power
 - **Length-match the SD signal traces.**
 
 #### 3.5.7 RTC
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083240305-8fcf2fdf-fafa-45f7-8b23-de03b7a05cd4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083240305_8fcf2fdf_fafa_45f7_8b23_de03b7a05cd4.png)
 
 The carrier board connects an external RTC via TWI0. D4 allows the RTC to be powered by either VCC_3V3 or a coin cell. The coin cell maintains RTC power when the carrier board is off. The default design uses a PCF8563T/5 RTC and a CR2032 coin cell.
 
@@ -352,166 +352,166 @@ The carrier board uses two ADCKEY signals. The ADC identifies each key by sampli
 The SoM includes a 51 kΩ pull-up resistor to 1.8 V. Only the corresponding pull-down resistors are required on the carrier board.
 
 #### 3.5.9 GPADC
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083240758-9c07d0a4-efcc-446e-bf77-897732818819.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083240758_9c07d0a4_efcc_446e_bf77_897732818819.png)
 
 GPADC signals are accessible through two 2 × 4 pin headers with a 2.54 mm pitch. A slide potentiometer can be connected directly using Dupont jumper wires. The SoM has 14 GPADC channels in total, with a maximum sampling voltage of 1.8 V.
 
 #### 3.5.10 IR Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083240962-f7889f8c-f23e-4a25-9c0a-9ca84ed2ad46.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083240962_f7889f8c_f23e_4a25_9c0a_9ca84ed2ad46.png)
 
 The IR interface is connected to an HS0038B receiver; an infrared remote control can be used to send infrared signals to the receiver. Received signal information can be viewed through the debug serial port.
 
 #### 3.5.11 USB Type-C Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083241185-83d9ec7f-2b4d-4fd4-bf21-1c62d4f3f79a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083241185_83d9ec7f_2b4d_4fd4_bf21_1c62d4f3f79a.png)
 
 The carrier board USB Type-C connector is connected to the SoM USB0 interface. This interface supports OTG functionality and can be connected to a PC for USB programming or to a USB flash drive for storage.
 
 #### 3.5.12 USB 2.0 Hub
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083241430-521f65a1-5f1b-462f-afdb-312d4f458a82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083241430_521f65a1_5f1b_462f_afdb_312d4f458a82.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083241645-11e752cb-c7cd-4cfc-8765-a9ff409d47f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083241645_11e752cb_c7cd_4cfc_8765_a9ff409d47f8.png)
 
 The carrier board includes a USB 2.0 hub that expands USB1 into four downstream host ports: three USB 2.0 Type-A ports and one Mini PCIe interface. The Mini PCIe interface supports an EC20 4G module for Internet access. The other ports support standard USB devices.
 
 #### 3.5.13 Wi-Fi and Bluetooth
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083241873-e47efe78-55ee-4f2c-8536-c0305d17bd5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083241873_e47efe78_55ee_4f2c_8536_c0305d17bd5b.png)
 
 The carrier board includes an AW-CM358SM Wi-Fi and Bluetooth module. Wi-Fi uses SDIO, supports the 2.4 GHz and 5 GHz bands, and complies with IEEE 802.11a/b/g/n/ac. Bluetooth 5.0 uses UART and PCM interfaces. The antenna supports both frequency bands.
 
 #### 3.5.14 4G
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083242213-f1eb7891-a59d-4b03-aba8-9f0f24db9b4f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083242213_f1eb7891_a59d_4b03_aba8_9f0f24db9b4f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083242436-e7c3506f-38fb-4f98-baa8-1f3b13ab9800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083242436_e7c3506f_38fb_4f98_baa8_1f3b13ab9800.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083242760-9c1c7925-fcf5-4c99-8c30-831781403acc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083242760_9c1c7925_fcf5_4c99_8c30_831781403acc.png)
 
 The carrier board provides a Mini PCIe interface for an EC20 4G module, with an independently controllable power supply and an onboard SIM card interface. Install the module and secure it with the latch before powering on the development board.
 
 #### 3.5.15 USB 3.0/PCIe 2.1
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083242988-baecf6fa-b61e-4770-b525-9aedd0336af4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083242988_baecf6fa_b61e_4770_b525_9aedd0336af4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083243198-9576b8d4-752a-41e0-9285-a85865aa1506.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083243198_9576b8d4_752a_41e0_9285_a85865aa1506.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083243397-73dc1adb-0bad-4aa3-ab14-d003426c28b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083243397_73dc1adb_0bad_4aa3_ab14_d003426c28b8.png)
 
 The SoM supports USB 3.0 and PCIe 2.1, which share the same pins. The carrier board provides both interfaces and uses a high-speed analog switch controlled by a DIP switch to select the active interface. USB 3.0 is accessible through a standard USB Type-A connector and operates in host mode only. PCIe 2.1 is accessible through a standard PCIe x1 connector and supports only devices with a compatible PCIe x1 edge connector.
 
 #### 3.5.16 Buzzer
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083243659-62aa1496-1339-4654-b6f8-ea11a3d84650.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083243659_62aa1496_1339_4654_b6f8_ea11a3d84650.png)
 
 The carrier board provides a PWM-driven buzzer interface. Different alarm tones can be generated under software control.
 
 #### 3.5.17 UART and SPI Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083243915-e63cf0d3-fcdd-4d29-bd83-68a85afe141e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083243915_e63cf0d3_fcdd_4d29_bd83_68a85afe141e.png)
 
 UART2/3 and SPI0 are accessible through a 2 × 5 box header with a 2.0 mm pitch for connecting external debugging devices. These functions share pins and cannot be used simultaneously.
 
 #### 3.5.18 I2S Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083244658-16ce0ae1-c1f9-4d29-9b20-853dc48e9a28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083244658_16ce0ae1_c1f9_4d29_9b20_853dc48e9a28.png)
 
 The carrier board exposes I2S2 through a 2 × 7 pin header with a 2.54 mm pitch for connecting an external audio IC. TWI3 controls the audio IC, and GPIOs provide basic I/O control.
 
 #### 3.5.19 DMIC Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083245141-314108ed-c0c9-43e3-b2f3-ac7be81bd015.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083245141_314108ed_c0c9_43e3_b2f3_ac7be81bd015.png)
 
 The DMIC interface is accessible through a 2 × 5 pin header with a 2.54 mm pitch. The SoM supports up to eight digital microphones at sampling rates from 8 kHz to 48 kHz.
 
 #### 3.5.20 LED
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083245329-c33ba1fb-25f5-477a-8f5a-e9dea59b1832.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083245329_c33ba1fb_25f5_477a_8f5a_e9dea59b1832.png)
 
 The carrier board includes two user-configurable LEDs controlled through GPIOs. These GPIOs are multiplexed with those on the I2S and DMIC interfaces.
 
 #### 3.5.21 HP Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083245559-96db9cc1-fee4-4159-9905-73eb085235ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083245559_96db9cc1_fee4_4159_9905_73eb085235ef.png)
 
 The carrier board provides a standard 3.5 mm headphone jack with stereo output, microphone input (differential only), and plug insertion/removal detection. Audio playback uses the native SoM HP signal.
 
 #### 3.5.22 MIC
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083245750-9657dd84-af9f-4983-b3ca-318b67916ba0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083245750_9657dd84_af9f_4983_b3ca_318b67916ba0.png)
 
 The carrier board includes an onboard electret microphone (differential input only) for capturing ambient sound.
 
 #### 3.5.23 Speaker Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083245989-a305bbf9-52bb-47de-9b1b-74f264a75a0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083245989_a305bbf9_52bb_47de_9b1b_74f264a75a0e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083246189-e54bc3b1-459f-464a-af5c-6baf4bd26a5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083246189_e54bc3b1_459f_464a_af5c_6baf4bd26a5e.png)
 
 The carrier board uses two native differential LINEOUT signals and a TPA6017A2PWP amplifier to drive 3 Ω, 2 W speakers. The two channels support stereo playback. The playback signal is fed back to the SoM through the MIC interface (differential input only) for echo cancellation.
 
 #### 3.5.24 OWA Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083246386-6429c2c5-5dfd-4a29-91d0-b6576bafbc27.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083246386_6429c2c5_5dfd_4a29_91d0_b6576bafbc27.png)
 
 The OWA interface is accessible through a 2 × 3 pin header with a 2.54 mm pitch. It complies with IEC 60958 and supports up to 24-bit data.
 
 #### 3.5.25 RGMII Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083246596-a94927d6-cff8-499f-acf5-e4395f39361d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083246596_a94927d6_cff8_499f_acf5_e4395f39361d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083246889-4d1325c0-495f-4b4e-99cc-332696c0aaae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083246889_4d1325c0_495f_4b4e_99cc_332696c0aaae.png)
 
 The carrier board provides two auto-negotiating 10/100/1000 Mbit/s Ethernet ports using the SoM RGMII interfaces and YT8521SH ICs. Standard RJ45 connectors with integrated network transformers provide connectivity to external LAN and WAN devices.
 
 #### 3.5.26 DP Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083247184-38b73499-04ff-42b2-aaf4-a522b966750b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083247184_38b73499_04ff_42b2_aaf4_a522b966750b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083247397-47b90d7b-8a5b-4a19-bdc2-1fff43df9558.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083247397_47b90d7b_8a5b_4a19_bdc2_1fff43df9558.png)
 
 The carrier board provides a standard DisplayPort (DP) connector for connecting a DP display. The interface currently operates in eDP mode. Connect and power on the display before powering on the development board, then select DP in U-Boot. The platform supports dual displays with independent content. When paired with LVDS, LCD, or MIPI, DP must be the secondary display. When paired with HDMI, DP must be the primary display.
 
 #### 3.5.27 HDMI Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083247748-36fc871d-3f1d-41ae-a562-7cef4e61bb8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083247748_36fc871d_3f1d_41ae_a562_7cef4e61bb8c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083247957-ced533ce-a4a5-4394-8e0c-78f2e1df20c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083247957_ced533ce_a4a5_4394_8e0c_78f2e1df20c2.png)
 
 The carrier board provides a standard HDMI connector for HDMI displays and supports hot-plugging. Select HDMI in U-Boot. The platform supports dual displays with independent content. When HDMI is paired with DP, DP must be the primary display.
 
 #### 3.5.28 LVDS/MIPI Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083248214-1bbcf082-1b89-49da-921b-8600d77bc321.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083248214_1bbcf082_1b89_49da_921b_8600d77bc321.png)
 
 The carrier board exposes LVDS signals through a 2 × 19 pin header with a 2.0 mm pitch. These signals share pins with MIPI and LCD. The interface supports a standard Forlinx 10.1-inch LVDS display or a dual 8-lane LVDS display. A standard Forlinx LVDS-to-MIPI adapter board supports connection to a Forlinx 7-inch MIPI display. Select the corresponding display in U-Boot. The platform supports dual displays with independent content. However, only one of LVDS, MIPI, and LCD can be used at a time because they share pins. When paired with DP, the LVDS, LCD, or MIPI display must be the primary display.
 
 #### 3.5.29 LCD-RGB666 Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083248480-bb9f1c20-bbcb-4e96-b70d-099b6c63fa61.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083248480_bb9f1c20_bbcb_4e96_b70d_099b6c63fa61.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083248718-35c8e0d8-09ba-4a75-8e15-8a18210423ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083248718_35c8e0d8_09ba_4a75_8e15_8a18210423ca.png)
 
 The carrier board exposes LCD signals through a 54-pin FPC connector with a 0.5 mm pitch. These signals share pins with MIPI and LVDS. The interface includes a TSC2007 resistive touch controller. Select the corresponding display in U-Boot. The platform supports dual displays with independent content. However, only one of LVDS, MIPI, and LCD can be used at a time because they share pins. When paired with DP, the LVDS, LCD, or MIPI display must be the primary display.
 
 #### 3.5.30 RS-485 Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083248973-85e59887-6485-4f99-96a6-77d2160b82a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083248973_85e59887_6485_4f99_96a6_77d2160b82a2.png)
 
 The carrier board provides two standard RS-485 interfaces using native UART signals and the TDH341S485S. These interfaces support automatic transmit/receive control and level 4 EMC protection designed to meet the requirements of most applications.
 
 #### 3.5.31 CAN Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083249234-826e8b9a-20a3-4c2a-b4cb-bdaa27d60fe0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083249234_826e8b9a_20a3_4c2a_b4cb_bdaa27d60fe0.png)
 
 The carrier board provides two standard CAN interfaces using native CAN signals and the TDH541SCANFD. These interfaces support a maximum data rate of 1 Mbit/s and level 4 EMC protection designed to meet the requirements of most applications.
 
 #### 3.5.32 OV13850 Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083249560-0af6b897-5f05-44dc-b77b-2c346fd36147.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083249560_0af6b897_5f05_44dc_b77b_2c346fd36147.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083249847-a0144cf7-2226-4db1-96ef-974db0afe3ac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083249847_a0144cf7_2226_4db1_96ef_974db0afe3ac.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083250066-a08c4817-da02-4d9f-9445-22304cc0b1c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083250066_a08c4817_da02_4d9f_9445_22304cc0b1c0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083250269-2b78506a-c403-4e22-a2f7-8c0416417822.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083250269_2b78506a_c403_4e22_a2f7_8c0416417822.png)
 
 The carrier board exposes a 4-lane MIPI interface through a 26-pin FPC connector for a standard Forlinx OV13850 camera. This interface shares pins with MIPI_4ACAM.
 
 #### 3.5.33 OV5645 Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083250492-633f9e2b-867b-4bbc-88bb-7507ea8e36d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083250492_633f9e2b_867b_4bbc_88bb_7507ea8e36d6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083250724-8fee6bee-7e31-431e-92db-f09ef90862a4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083250724_8fee6bee_7e31_431e_92db_f09ef90862a4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083250947-4d6e4776-2dbe-427a-a976-10c6899fdf30.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083250947_4d6e4776_2dbe_427a_a976_10c6899fdf30.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083251163-cb35c509-e545-48ab-bc53-db6a36810bb5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083251163_cb35c509_e545_48ab_bc53_db6a36810bb5.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083251367-6e46ea35-ff61-49ba-8bd0-1c4e567a8315.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083251367_6e46ea35_ff61_49ba_8bd0_1c4e567a8315.png)
 
 The carrier board exposes two 2-lane MIPI interfaces through two 26-pin FPC connectors for standard Forlinx OV5645 cameras.
 
 #### 3.5.34 MIPI_4ACAM Interface
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083251579-62e52b30-4162-4263-8f57-80dd5918c5d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083251579_62e52b30_4162_4263_8f57_80dd5918c5d7.png)
 
 The carrier board exposes a 4-lane MIPI interface through a 2 × 10 pin header with a 2.0 mm pitch. This interface shares pins with OV13850 and supports a standard Forlinx MIPI-to-four-analog-camera adapter board, allowing four high-definition analog cameras to be connected simultaneously.
 
@@ -519,11 +519,11 @@ The carrier board exposes a 4-lane MIPI interface through a 2 × 10 pin header w
 
 The SoM connector specifications are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083259491-c6adc8da-e087-48fe-a202-3af319141371.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083259491_c6adc8da_e087_48fe_a202_3af319141371.png)
 
 The carrier board connector specifications are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083259167-17d1f04a-4d8d-4a33-a0ab-c7ad5dc16534.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083259167_17d1f04a_4d8d_4a33_a0ab_c7ad5dc16534.png)
 
 ## 5 OK527x-C Development Board Power Consumption under Linux
 
@@ -543,8 +543,8 @@ The carrier board connector specifications are as follows:
 
 ## 6 Minimal System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083228592-0fa8657e-b1c7-4a58-b863-52c2026b14f0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083228592_0fa8657e_b1c7_4a58_b863_52c2026b14f0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083228858-98fc348e-3430-475b-8898-2936333f36cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083228858_98fc348e_3430_475b_8898_2936333f36cd.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083229087-fc3d2378-d239-4b32-9454-ce0c2c44b94d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720083229278-9ffcb124-2107-4475-a558-4423b6e9fb64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083229087_fc3d2378_d239_4b32_9454_ce0c2c44b94d.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083229278_9ffcb124_2107_4475_a558_4423b6e9fb64.png)
