@@ -32,7 +32,7 @@ This manual applies to Forlinx OK527x-C development boards V1.1 and later, and F
 | 24/04/2024 |        V1.1        |      V1.1       |      V1.1 and above       | Corrections and errata                                       |
 | 23/05/2024 |        V1.2        |      V1.1       |      V1.1 and above       | Added software support for 4K HDMI display; removed the asterisk indicating lack of support. |
 
-## 1 Allwinner T527 Introduction
+## 1. Allwinner T527 Introduction
 
 The T527 series comprises high-performance AI SoCs designed for commercial electronics, industrial, and automotive applications. Each SoC integrates an octa-core Cortex-A55 CPU, a HiFi4 DSP, a 2 TOPS NPU, and a G57 MC1 GPU. It supports a 4K at 30 fps H.265 decoder, a 4K at 30 fps H.264 encoder, and a 1080p at 60 fps H.264 encoder. The integrated DI and SmartColor systems provide smooth operation and professional AI visual effects.
 
@@ -51,7 +51,7 @@ Applications include:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083269105_4756d6e9_b30b_49fe_a736_d8d35620fb48.png)
 
-## 2 FET527-C SoM Introduction
+## 2. FET527-C SoM Introduction
 
 ### 2.1 FET527-C SoM Appearance
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083223538_34a1b464_e382_4d86_aa44_36b21e38dba9.jpeg)
@@ -63,9 +63,11 @@ Applications include:
 **Back**
 
 ### 2.2 FET527-C SoM Dimensions
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224210_224b95f0_79a2_4f95_b660_8bb46aae4177.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224368_f41b6fc3_34a9_4a8d_a6df_785c4c56986f.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1732777917855_1c268f9a_0f6e_4592_bf79_e613e163bb56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224210_224b95f0_79a2_4f95_b660_8bb46aae4177.png) 
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224368_f41b6fc3_34a9_4a8d_a6df_785c4c56986f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1732777917855_1c268f9a_0f6e_4592_bf79_e613e163bb56.png)
 
-![](1795749537854-6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-6.png)
 
 Dimensions: 70 mm×46 mm, tolerance ±0.15 mm. For detailed dimensions, refer to the DXF file.
 
@@ -79,7 +81,7 @@ Refer to the development board design and the figures below for SMD nut specific
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720055814219_26674965_242f_4a82_9c44_743672b7717c.png)
 
-![](1795749537854-8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-8.png)
 
 ### 2.3 Performance Parameters
 #### 2.3.1 System Clock Frequency
@@ -172,9 +174,9 @@ The values in this table are based on the hardware design or theoretical process
 ### 2.5 FET527-C SoM Pin Definitions
 #### 2.5.1 FET527-C SoM Pin Schematic Diagram
 
-![](1721197352551-0105554a-7581-4aca-87ba-d60297f315a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197352551-0105554a-7581-4aca-87ba-d60297f315a9.png)
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197358610_2b228097_0f30_4858_ac8d_b3d5874db65a.png)
-![](1721197365179-4403f109-1037-44ce-beab-1968dd0424ab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197365179-4403f109-1037-44ce-beab-1968dd0424ab.png)
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197371652_05757a9c_bfa4_4c62_855a_14a7de511987.png)
 
 #### 2.5.2 FET527-C SoM Pin Function Description
@@ -210,7 +212,7 @@ Refer to Chapter 6 for the minimal system schematic. In addition to the minimal 
 
 For the design of the SoM peripheral circuits, refer to Section 3.5 "OK527x-C Carrier Board Description" in Chapter 3.
 
-## 3 Development Board Introduction
+## 3. Development Board Introduction
 
 ### 3.1 OK527x-C Development Board Interface Diagram
 The Forlinx OK527x-C development platform connects the SoM to the carrier board through board-to-board connectors. The main interfaces are shown below:
@@ -231,7 +233,7 @@ Power supply voltage: DC 12 V.
 ### 3.3 Heatsink Dimensions
 The OK527x-C carrier board provides two 3.2 mm mounting holes for a heatsink. Install a heatsink as required by the operating environment. Place an electrically insulating, thermally conductive silicone pad between the heatsink and the SoM. The Forlinx heatsink measures 39 × 39 × 23 mm. See the figure below for detailed dimensions: 
 
-![](1795749537854-16.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-16.png)
 
 ### 3.4 Carrier Board Resources
 | Function | Quantity | Parameters |
@@ -297,7 +299,7 @@ The OK527x-C attempts to boot from the following devices in order:
 The TF card has boot priority over eMMC. If a TF card is inserted during normal operation rather than programming, ensure that it does not contain a BOOT partition. To create a TF card boot image, refer to the software user manual.
 
 #### 3.5.3 Function Keys
-![](1795749537854-18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-18.png)
 
 Press AP-RESET to reset and restart the system. Press FEL to enter forced upgrade mode for system programming over USB from a PC. Use PWRON to power the system on or off.
 
@@ -345,7 +347,7 @@ The TF card interface uses the processor SDC0 channel. The TF card must be power
 The carrier board connects an external RTC via TWI0. D4 allows the RTC to be powered by either VCC_3V3 or a coin cell. The coin cell maintains RTC power when the carrier board is off. The default design uses a PCF8563T/5 RTC and a CR2032 coin cell.
 
 #### 3.5.8 LRADC Keys
-![](1795749537854-26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-26.png)
 
 The carrier board uses two ADCKEY signals. The ADC identifies each key by sampling the voltage produced by its corresponding resistor divider.
 
@@ -515,7 +517,7 @@ The carrier board exposes two 2-lane MIPI interfaces through two 26-pin FPC conn
 
 The carrier board exposes a 4-lane MIPI interface through a 2 × 10 pin header with a 2.0 mm pitch. This interface shares pins with OV13850 and supports a standard Forlinx MIPI-to-four-analog-camera adapter board, allowing four high-definition analog cameras to be connected simultaneously.
 
-## 4 Connector Dimensions
+## 4. Connector Dimensions
 
 The SoM connector specifications are as follows:
 
@@ -525,7 +527,7 @@ The carrier board connector specifications are as follows:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083259167_17d1f04a_4d8d_4a33_a0ab_c7ad5dc16534.png)
 
-## 5 OK527x-C Development Board Power Consumption under Linux
+## 5. OK527x-C Development Board Power Consumption under Linux
 
 | **No.** | **Test Item** | **SoM Power (W)** | **Development Board Power**<br/>**(Including SoM) (W)** |
 | :---: | --- | :---: | :---: |
@@ -541,7 +543,7 @@ The carrier board connector specifications are as follows:
 - **Test conditions: 4 GB RAM and 32 GB eMMC on the SoM, Quectel EC20 4G module, and an optional Forlinx display. Supply voltages: 5 V for the SoM and 12 V for the carrier board.**
 - **Power consumption values are for reference only.**
 
-## 6 Minimal System Schematic
+## 6. Minimal System Schematic
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083228592_0fa8657e_b1c7_4a58_b863_52c2026b14f0.png)
 
