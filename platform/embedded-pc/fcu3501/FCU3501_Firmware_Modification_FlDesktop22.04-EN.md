@@ -14,7 +14,7 @@ To simplify the initial configuration of multiple devices, this section describe
 
 ## **Revision History**
 
-| **Date**    | **Manual Version**    | **Description**    |
+| **Date**    | **Manual Version**    | **Revision History**    |
 | --- | --- | --- |
 | 29/09/2025 | V1.0    | Initial release    |
 
