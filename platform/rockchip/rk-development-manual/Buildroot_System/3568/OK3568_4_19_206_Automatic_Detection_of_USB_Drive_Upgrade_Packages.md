@@ -51,7 +51,7 @@ The script reads as follows:
 
 The format is as follows:
 
-![Image](./images/OK3568_4_19_206_Automatic_Detection_of_USB_Drive_Upgrade_Packages/1723430547170_0b94b0ea_bea3_4989_9955_86b255a18bb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Automatic_Detection_of_USB_Drive_Upgrade_Packages/1723430547170_0b94b0ea_bea3_4989_9955_86b255a18bb8.png)
 
 Give permission to self-start script execution:
 
