@@ -42,7 +42,7 @@ The OK3568-UP4 development board currently offers documentation for the Linux op
 **Note: For detailed documentation, please refer to the OK3568-UP4 Linux User Documentation. The directory path of the user documentation mentioned in this article takes the OK3568-UP4 Linux User Documentation as the root directory.**
 
 ## Revision History
-| **Date**   | **Manual Version** | **Core Board Version** | **Base Board Version**  | **Update Content**               |
+| **Date**   | **Manual Version** | **SoM Version** | **Carrier Board Version**  | **Update Content**               |
 | ---------- | ------------------ | ---------------------- | ----------------------- | -------------------------------- |
 | 06/07/2026 | V1.0               | V1.0                   | V1.3 and later versions | First release of the user manual |
 

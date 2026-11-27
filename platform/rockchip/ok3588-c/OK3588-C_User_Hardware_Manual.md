@@ -107,7 +107,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB for the FET35
 
 Connectors: Four 0.4mm pitch, 100pin board-to-board connectors.  See the appendix for the connector dimension drawing.
 
-Four mounting holes with a diameter of 2.2 mm are reserved at the four corners of the core board. For use in a vibrating environment, fixing screws can be installed to improve the reliability of the product connection.
+Four mounting holes with a diameter of 2.2 mm are reserved at the four corners of the SoM. For use in a vibrating environment, fixing screws can be installed to improve the reliability of the product connection.
 
 You can refer to the development board design and use M2, L=1.5mm patch nuts on the carrier board.
 
@@ -933,7 +933,7 @@ The schematic is as follows:
 
 - **For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board;**
 
-- **It is recommended to keep Q1 and Q2, which can effectively prevent the U5 current from flowing back to the CPU through UART2\_TX/RX when the core board is not powered-up, affecting the startup and even causing damage.**
+- **It is recommended to keep Q1 and Q2, which can effectively prevent the U5 current from flowing back to the CPU through UART2\_TX/RX when the SoM is not powered-up, affecting the startup and even causing damage.**
 
 #### 3.5.6 IIC Extending IO
 

@@ -2708,9 +2708,9 @@ Remove the TF card and power on the board to start the system.
 
 During mass production, the red LED on the SoM indicates the programming status as follows:
 
-Pre-programming stage: The red light on the core board comes on, then goes out.
+Pre-programming stage: The red light on the SoM comes on, then goes out.
 
-Programming complete stage: The red light on the core board flashes.
+Programming complete stage: The red light on the SoM flashes.
 
 **3\. Restoring the TF Card**
 

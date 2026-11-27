@@ -219,7 +219,7 @@ If you need methods to adjust the junction temperature, frequency reduction temp
 
 **Default function-All pin functions of the SoM are specified according to the "default function" in the table below. Please do not modify it, otherwise it may be delivered from the factory. If you have any questions about drive conflict. , please contact our sales or technical support.**
 
-**Note3: The pins marked as "Do not use on carrier board" in the "Default Function" column are those already utilized by the core board and should not be used in the design of the baseboard.**
+**Note3: The pins marked as "Do not use on carrier board" in the "Default Function" column are those already utilized by the SoM and should not be used in the design of the baseboard.**
 
 **Table 1. Definition of P1 Odd Pins of SoM**
 
@@ -478,7 +478,7 @@ ABC-D+IK:M
 
 #### 3.5.1 Carrier Board Power
 
-Carrier board power supply is DC 5V, led in through DC-005 socket (P3). The DC 5V power supply passes through a self - recovering fuse, a reverse - polarity protection diode, and an over - voltage protection circuit, and then is converted by a DCDC converter to output VSYS\_3V3 to supply power to the core board. After the SoM is powered on, it controls the MOSFET through the PMIC\_ON\_REQ signal. The VDD\_5V is converted to GEN\_5V through the MOSFET, and the VSYS\_3V3 is converted to GEN\_3V3 through another MOSFET.
+Carrier board power supply is DC 5V, led in through DC-005 socket (P3). The DC 5V power supply passes through a self - recovering fuse, a reverse - polarity protection diode, and an over - voltage protection circuit, and then is converted by a DCDC converter to output VSYS\_3V3 to supply power to the SoM. After the SoM is powered on, it controls the MOSFET through the PMIC\_ON\_REQ signal. The VDD\_5V is converted to GEN\_5V through the MOSFET, and the VSYS\_3V3 is converted to GEN\_3V3 through another MOSFET.
 
 When the PMIC\_ON\_REQ pin outputs a high - level signal, the MOSFET are turned on, and VDD\_5V and VSYS\_3V3 can output GEN\_5V and GEN\_3V3 respectively.
 

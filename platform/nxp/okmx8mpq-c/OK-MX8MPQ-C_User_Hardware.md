@@ -629,7 +629,7 @@ Power supply voltage: DC 12V.
 
 The antenna board is used for the installation and fixation of 4G and 5G antennas. Its external dimensions are 20mm×140mm. For more detailed dimensions, please refer to the figure below:
 
-Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
+Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the SoM. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-c/OK-MX8MPQ-C_User_Hardware/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
 

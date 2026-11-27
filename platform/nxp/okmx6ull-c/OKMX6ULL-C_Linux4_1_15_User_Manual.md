@@ -340,7 +340,7 @@ In general, the power can be turned off directly. If there is data storage, func
 
 ## 3\. Development Board Command Line Function Test
 
-**Note: The core board of this product supports functions not limited to those mentioned in the manual. Forlinx only tests and verifies the functions listed in the manual. Functions not mentioned in the manual are not guaranteed, and users can test and verify them independently.**
+**Note: The SoM of this product supports functions not limited to those mentioned in the manual. Forlinx only tests and verifies the functions listed in the manual. Functions not mentioned in the manual are not guaranteed, and users can test and verify them independently.**
 
 This section describes how to use the external expansion interface of the development board.
 
@@ -2406,7 +2406,7 @@ When debugging the kernel, you can choose to use the network to update the runni
 
 **Note:**
 
-+ **eMMC core board, support both qt and console file system, burn-in tool, and factory default qt version;**
++ **eMMC SoM, support both qt and console file system, burn-in tool, and factory default qt version;**
 + **Factory image path: User Profile \\ Linux \\ Image.**
 
 OKMX6ULL-C development board user information provides a factory-flashed image; the image includes the following parts: BootLoader image, kernel image, device tree image, Logo image, file system, and module files.
@@ -2607,7 +2607,7 @@ The path is: user header\\ Linux\\ shooting tool\\ OTG shooting\\ mfgtools to ma
 
 | **File Name**                   | **path**                                                     | **Description**                                              |
 | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| mx6ull-4gemmc-512mddr-qt5.6.vbs | <font style="color:#000000;">mfgtools</font>                 | For flashing eMMC core board-related images                  |
+| mx6ull-4gemmc-512mddr-qt5.6.vbs | <font style="color:#000000;">mfgtools</font>                 | For flashing eMMC SoM-related images                  |
 | ucl2.xml                        | <font style="color:#000000;">Mfgtools\\Profiles\\Linux\\OS Firmware</font> | Defines the specific operation steps and contents of the<br />flashing process, and the user can view the file<br />when it involves the instruction of single-step update. |
 | Boot-related images             | <font style="color:#000000;">Mfgtools\\Profiles\\Linux\\OS Firmwarefirmware</font> | The folder contents are used for booting and system<br /> flashing and generally do not require modification. |
 | Image burned into flash         | <font style="color:#000000;">Mfgtools\\Profiles\\Linux\\OS Firmware\\files\\linux</font> | The contents of the folder are used to burn into Flash<br /> and can be used to burn your image by renaming<br />it to the same name and replacing it after the user modifies the image. |

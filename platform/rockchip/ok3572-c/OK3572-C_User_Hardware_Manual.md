@@ -1234,7 +1234,7 @@ To facilitate user debugging, OK3572-C uses a USB to UART chip to convert the UA
 
 - **For future debugging convenience, route out these debug ports on custom carrier boards;**
 
-- **It is recommended to keep Q1 and Q2, which can effectively prevent the U6 current from flowing back to the CPU through UART0\_TX/RX when the core board is not powered-up, affecting the startup and even causing damage.**
+- **It is recommended to keep Q1 and Q2, which can effectively prevent the U6 current from flowing back to the CPU through UART0\_TX/RX when the SoM is not powered-up, affecting the startup and even causing damage.**
 
 #### 3.5.6 IIC Expanded for IO
 
@@ -1755,16 +1755,16 @@ The schematic is as follows:
 
 - Multiple slave devices can be connected to a single I2C bus. Ensure there are no address conflicts;
 - The I2C bus must be equipped with pull-up resistors, but avoid using multiple resistors for pull-up;
-- Ensure level matching between the I2C on the core board and the I2C of the slave devices.
+- Ensure level matching between the I2C on the SoM and the I2C of the slave devices.
 
 **USB Design**
 
 - To meet USB eye diagram requirements, the PCB trace length for USB 3.0 TX/RX should not exceed 6 inches;
-- Unused signal pins on the core board can be left floating, but all GND connections must be properly established.
+- Unused signal pins on the SoM can be left floating, but all GND connections must be properly established.
 
 **Power-on Sequence**
 
-- When designing the carrier board, it is strongly recommended to reference the development board design by using the CARRIER_BOARD_EN signal output from the core board as the enable for the carrier board’s power-on sequence. Strictly control the power-on timing; failure to do so may result in the following issues:
+- When designing the carrier board, it is strongly recommended to reference the development board design by using the CARRIER_BOARD_EN signal output from the SoM as the enable for the carrier board’s power-on sequence. Strictly control the power-on timing; failure to do so may result in the following issues:
   · Excessive inrush current during power-on.
   · Device failure to boot.
   · In the worst-case scenario, irreversible damage to the processor.

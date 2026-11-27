@@ -589,7 +589,7 @@ The PWRON button at the lower - right corner of the carrier board is a switch - 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_User_Hardware_Manual/1721382212716_ef1df85c_8110_445f_b78e_a6395ef8aa6f.png)
 
-The five buttons at the lower - right corner of the carrier board are implemented by the LRADC of the CPU. The LRADC on the core board has a 51K resistor pulled up to 1.8V. The LRADC has a 6 - bit resolution and is used for button voltage identification. The maximum sampling rate is 2kHz, and the sampling voltage ranges from 0 to 1.35V. It is recommended that the voltage - dividing resistors have an accuracy of 1%. Leave the pins floating when the carrier board is not in use.
+The five buttons at the lower - right corner of the carrier board are implemented by the LRADC of the CPU. The LRADC on the SoM has a 51K resistor pulled up to 1.8V. The LRADC has a 6 - bit resolution and is used for button voltage identification. The maximum sampling rate is 2kHz, and the sampling voltage ranges from 0 to 1.35V. It is recommended that the voltage - dividing resistors have an accuracy of 1%. Leave the pins floating when the carrier board is not in use.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_User_Hardware_Manual/1721382219281_e4ae9e19_d112_49be_8cf8_8ac87c9cbb73.png)
 
@@ -837,7 +837,7 @@ There is a SPI NOR FLASH on the carrier board. Pay attention to the power - supp
 
 5. SoM heat dissipation consideration:
 
-After actual testing, without a heat sink on the SoM, the main frequency will be reduced to 480MHz when operating at a high temperature of 85°C; if a small heat sink is added, it will not be down - clocked at 85°C. Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. The size of the heat sink is shown in the figure below:
+After actual testing, without a heat sink on the SoM, the main frequency will be reduced to 480MHz when operating at a high temperature of 85°C; if a small heat sink is added, it will not be down - clocked at 85°C. Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the SoM. The size of the heat sink is shown in the figure below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_User_Hardware_Manual/1720596374612_a3a63ceb_7525_4a56_88e7_23ea87136bee.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_User_Hardware_Manual/1720596374804_32a3eb61_eefe_44e5_8d9d_5540ba5f5b58.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_User_Hardware_Manual/1720596375044_f7ae8f47_306f_45ea_a1fa_7e67a3ad7da9.png)
 

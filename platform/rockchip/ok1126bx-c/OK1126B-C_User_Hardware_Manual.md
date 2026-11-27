@@ -347,7 +347,7 @@ K1 on the development board is the CPU reset button. Pressing it will reset the 
 
 #### 3.5.3 Boot Configuration
 
-The OK1126Bx‑C determines its boot mode by sampling the voltage on the SARADC0\_IN7\_BOOT pin. The necessary circuitry for this is already implemented on the core board. The default boot priority order is:
+The OK1126Bx‑C determines its boot mode by sampling the voltage on the SARADC0\_IN7\_BOOT pin. The necessary circuitry for this is already implemented on the SoM. The default boot priority order is:
 
 FSPI → eMMC → TF Card → USB.
 

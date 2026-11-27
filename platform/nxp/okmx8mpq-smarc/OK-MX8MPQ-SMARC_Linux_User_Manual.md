@@ -289,7 +289,7 @@ Swap:              0           0           0
 
 In general, the power can be turned off directly, if there is data storage, function use and other operations, do not arbitrarily disconnect the power during the operation, in order to prevent irreversible damage to the file, you can only re-burn the firmware. To ensure the data is completely written, enter the sync command to synchronize the data before turning off the power.   
 The command ‘reboot’ can be used to restart the development board. You can also restart the hardware by pressing the RESET key or directly power off and restart.   
-Note: If the product designed by the user based on the core board has an abnormal system shutdown due to an accidental power loss in use, measures such as power-down protection can be incorporated into the design.
+Note: If the product designed by the user based on the SoM has an abnormal system shutdown due to an accidental power loss in use, measures such as power-down protection can be incorporated into the design.
 
 ## 3. Platform Interface Function Use and Test
 

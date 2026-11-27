@@ -591,7 +591,7 @@ To ensure soldering yield, please refer to the following specifications for sten
 
 Hole Opening Scheme
 
-Thickness: Use a 0.1/0.15mm step stencil, with the core board mounting area uniformly designed for a 0.15mm upper step;
+Thickness: Use a 0.1/0.15mm step stencil, with the SoM mounting area uniformly designed for a 0.15mm upper step;
 
 LCC Pad Aperture: The opening width should be 0.6mm, and the length should extend outward by 2.15mm along the edge of the pad;
 

@@ -172,7 +172,7 @@ It is recommended to use a high-quality serial cable to avoid garbled output.
 
 Before logging in over the network, make sure the direct network connection between the PC and the development board is working properly. You can use the ping command to test the connection status. Specific Operations:
 
-1\. Connect the eth0 port of the development board to the PC using an Ethernet cable, and power on the board. After the kernel boots, the blue heartbeat LED on the core board will start blinking. Once the network interface connected to the PC starts flashing rapidly, the network connection is ready for testing;
+1\. Connect the eth0 port of the development board to the PC using an Ethernet cable, and power on the board. After the kernel boots, the blue heartbeat LED on the SoM will start blinking. Once the network interface connected to the PC starts flashing rapidly, the network connection is ready for testing;
 
 2\. Disable the firewall on the PC (this manual does not cover firewall settings, as they are standard PC operations), and open the Run command window;
 

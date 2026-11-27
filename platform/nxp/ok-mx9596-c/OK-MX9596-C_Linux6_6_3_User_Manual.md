@@ -1322,7 +1322,7 @@ See Section 2.3.2 SSH Server.
 
 ### 4.14 WIFI Test
 
-**Note: The OK-MX9596-C core board is equipped with the AW-CM358SM WiFi \& BT module, supporting operating frequencies of 2.4 GHz and 5 GHz.**
+**Note: The OK-MX9596-C SoM is equipped with the AW-CM358SM WiFi \& BT module, supporting operating frequencies of 2.4 GHz and 5 GHz.**
 
 #### 4.14.1 STA Mode
 

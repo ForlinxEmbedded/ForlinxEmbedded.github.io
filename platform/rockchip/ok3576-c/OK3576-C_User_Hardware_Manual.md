@@ -1322,7 +1322,7 @@ For debugging, the OK3576-C/OK3576-C21 development board uses a USB-to-UART chip
 
 - **For future debugging convenience, route out these debug ports on custom carrier boards;**
 
-- **It is recommended to keep Q1 and Q2, which can effectively prevent the U6 current from flowing back to the CPU through UART0\_TX/RX when the core board is not powered-up, affecting the startup and even causing damage.**
+- **It is recommended to keep Q1 and Q2, which can effectively prevent the U6 current from flowing back to the CPU through UART0\_TX/RX when the SoM is not powered-up, affecting the startup and even causing damage.**
 
 #### 3.5.6 IIC Expanded for IO
 

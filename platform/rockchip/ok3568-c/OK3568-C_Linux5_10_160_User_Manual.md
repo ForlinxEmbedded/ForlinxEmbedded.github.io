@@ -1937,7 +1937,7 @@ Freeing pipeline ...
 
 ### 5.2 Video Hardware Encoding
 
-OK3568 supports up to 1080p @ 60fps H.264/H.265 video encoding, as well as high-quality JPEG encoding and decoding. This section of commands is only suitable for core boards with less than 4G of memory.
+OK3568 supports up to 1080p @ 60fps H.264/H.265 video encoding, as well as high-quality JPEG encoding and decoding. This section of commands is only suitable for SoMs with less than 4G of memory.
 
 #### 5.2.1 Video Hardware Encoding H.264
 

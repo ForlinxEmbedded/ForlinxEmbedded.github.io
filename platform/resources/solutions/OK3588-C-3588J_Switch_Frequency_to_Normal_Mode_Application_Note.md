@@ -15,7 +15,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 | ---------- | ------- | ---------------- |
 | 21/03/2024 | V1.0    | Initial Version  |
 
- Switch the industrial-grade core board frequency to normal mode.
+ Switch the industrial-grade SoM frequency to normal mode.
 
 ## Modification Steps
 

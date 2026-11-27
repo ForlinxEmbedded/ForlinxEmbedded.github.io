@@ -254,7 +254,7 @@ Default function-All pin functions of the SoM are specified according to the "de
 
 Drive conflict. If you have any questions, please contact our sales or technical support.
 
-**Note3: The pins marked as "Do not use on carrier board" in the "Default Function" column are those already utilized by the core board and should not be used in the design of the baseboard.**
+**Note3: The pins marked as "Do not use on carrier board" in the "Default Function" column are those already utilized by the SoM and should not be used in the design of the baseboard.**
 
 **Table 1 LEFT\_UP（P1） Connector Interface(Odd) Pin Definition**
 
@@ -1436,7 +1436,7 @@ Fixed hole size: spacing: 180mm × 120mm, hole diameter: 3.2mm.
 
 Plate making process: thickness 1.6mm, 4-layer PCB.
 
-Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
+Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the SoM. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/ti/ok62xx-c/OK62xx-C_User_Hardware_Manual/1759202000942_897488d8_7829_4ed5_b6fa_f357009e33fd.png)
 
@@ -1543,26 +1543,26 @@ BOOTMODE Pin Mapping：
 | -------- | -------- | :--------------------: | :--------------: | :--: | :--: | :----------------------: | :--: | :--: | :---------------: | :--------: | :--: | :--: | :--: | :--: | :--: |
 | Reserved | Reserved | BackupBoot Mode Config | Backup Boot Mode |      |      | Primary Boot Mode Config |      |      | Primary Boot Mode | PLL Config |      |      |      |      |      |
 
-    BOOTMODE[02:00]: Configuration related to the CPU PLL. On the core board,
+    BOOTMODE[02:00]: Configuration related to the CPU PLL. On the SoM,
     it is configured as BOOTMODE[02:00] = 011.
     There is no need to repeat the configuration on the baseboard.
     
     BOOTMODE[03:06]: Requested boot (primary) mode after POR, that is,
     the peripheral/memory from which to boot.
-    The default configuration on the core board is BOOTMODE[03:06] = 0001.
+    The default configuration on the SoM is BOOTMODE[03:06] = 0001.
     
     BOOTMODE[07:09]: These pins provide optional configurations for the primary boot
     and are used in combination with the selected boot mode.
-    The default configuration on the core board is BOOTMODE[07:09] = 000.
+    The default configuration on the SoM is BOOTMODE[07:09] = 000.
     
     BOOTMODE[10:12]: Select the backup boot mode, that is, if the primary boot device fails,
     boot from the backup peripheral/memory.
-    The default configuration on the core board is BOOTMODE[10:12] = 011.
+    The default configuration on the SoM is BOOTMODE[10:12] = 011.
     
     BOOTMODE[13]: Optional configuration for the backup boot mode, used in combination with
-    the selected boot mode. The default configuration on the core board is BOOTMODE[13]: 0.
+    the selected boot mode. The default configuration on the SoM is BOOTMODE[13]: 0.
     
-    BOOTMODE[14:15]: Reserved pins. The default configuration on the core board is
+    BOOTMODE[14:15]: Reserved pins. The default configuration on the SoM is
     BOOTMODE[14:15] = 00.
     
     The following table shows the Primary Boot Mode Selection:

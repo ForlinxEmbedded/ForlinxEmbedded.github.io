@@ -213,7 +213,7 @@ Test with the development board IP 172.20.0.143. Please modify the development b
 
 In general, the power can be turned off directly. If there is data storage, function use, or other operations, avoid turning off the power arbitrarily during operation to prevent irreversible damage to the file. In such cases, only re-flashing the firmware can resolve the issue. To ensure that data is not completely written, enter the sync command to complete data synchronization before turning off the power.
 
-**Note: If the product designed by the user based on the core board has an abnormal system shutdown due to an accidental power loss in use, measures such as power-down protection can be incorporated into the design.**
+**Note: If the product designed by the user based on the SoM has an abnormal system shutdown due to an accidental power loss in use, measures such as power-down protection can be incorporated into the design.**
 
 ## 3\. OK- MA35-S21 Platform Function Test
 

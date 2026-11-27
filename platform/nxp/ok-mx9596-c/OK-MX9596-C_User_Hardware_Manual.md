@@ -222,7 +222,7 @@ Plate making process: thickness 1.6mm, 4-layer PCB.
 
 Power supply voltage: DC 12V.
 
-Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. The size of the SoM heat sink selected by Forlinx is: 38mm × 38mm × 10mm. There is also a fan on the heat sink to help heat dissipation. See the following figure for more detailed dimensions:
+Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the SoM. The size of the SoM heat sink selected by Forlinx is: 38mm × 38mm × 10mm. There is also a fan on the heat sink to help heat dissipation. See the following figure for more detailed dimensions:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_User_Hardware_Manual/1759127925089_1462c0e8_f21e_4a56_9584_8ffb730e3633.png)
 

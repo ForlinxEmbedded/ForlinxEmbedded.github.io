@@ -230,7 +230,7 @@ Plate making process: thickness 1.6mm, 4-layer PCB
 
 Power supply voltage: DC 12V
 
-Two mounting holes with a diameter of 3.2mm are reserved on the carrier board OK-MX93xx/91xx-C V2.1 You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
+Two mounting holes with a diameter of 3.2mm are reserved on the carrier board OK-MX93xx/91xx-C V2.1 You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the SoM. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/OK-MX9352-C_User_Hardware_Manual/1720506281706_79b776bd_66c5_4096_93a5_b79dae17ad8a.jpeg)![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/OK-MX9352-C_User_Hardware_Manual/1720506281936_90207f1f_ff58_4465_905d_258bccd2ff2c.jpeg)
 

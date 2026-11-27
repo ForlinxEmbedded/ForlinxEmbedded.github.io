@@ -3461,7 +3461,7 @@ Please remove SD CARD!!!, wait for reboot.
 
 At this time, pull out the TF card, the system automatically restarts (please do not power down directly). 
 
-When mass production, you can judge whether the burn-in is completed or not according to the heartbeat light of the core board, and the heartbeat light changes during the burn-in process are as follows:  
+When mass production, you can judge whether the burn-in is completed or not according to the heartbeat light of the SoM, and the heartbeat light changes during the burn-in process are as follows:  
 
 1\. Kernel startup phase: heartbeat light mode, regular intermittent flashing;
 

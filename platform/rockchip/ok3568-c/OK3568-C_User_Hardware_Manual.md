@@ -22,7 +22,7 @@ This manual is mainly applicable to the Forlinx OK3568-C platform. Other platfor
 | 30/05/2022 |        V1.1        | Adding the description of the industrial-grade parameters of FET3568J - C to the naming rules; 2. Adding the content about FET3568J - C to the ordering information; 3. Adding the description of the operating temperature to the working environment. |
 | 03/09/2022 |        V1.2        | Adding industrial 4G + 32G configuration information in the order information. |
 | 07/04/2023 |        V1.3        | Adding commercial 4G + 32G configuration information in the order information. |
-| 13/04/2023 |        V1.4        | 1. Separating the description of USB2.0 and USB 3.0 interface resources in the "2.5 Core Board Interface Resources" section;<br/>2\. Updating the schematic diagram and changing the common-mode inductor model in the CAN path to PCAQ4520MB - 122 in the "3.5.6 CAN" section.<br/>3. Updating the schematic diagram and adding the description about the reserved grounding capacitor for SDMMC0\_CLK in the "3.5.9 TF Card" section.<br/>4. Modifying the description of using the USB3.0 interface to program the system in the "3.5.21 USB3.0 Interface" section.<br/>5. Updating the schematic diagram and adding the description of design considerations for the CLKOUT, XTAL\_I, XTAL\_O, and AVDDL signals of the PHY chip in the "3.5.22 Ethernet Interface" section. |
+| 13/04/2023 |        V1.4        | 1. Separating the description of USB2.0 and USB 3.0 interface resources in the "2.5 SoM Interface Resources" section;<br/>2\. Updating the schematic diagram and changing the common-mode inductor model in the CAN path to PCAQ4520MB - 122 in the "3.5.6 CAN" section.<br/>3. Updating the schematic diagram and adding the description about the reserved grounding capacitor for SDMMC0\_CLK in the "3.5.9 TF Card" section.<br/>4. Modifying the description of using the USB3.0 interface to program the system in the "3.5.21 USB3.0 Interface" section.<br/>5. Updating the schematic diagram and adding the description of design considerations for the CLKOUT, XTAL\_I, XTAL\_O, and AVDDL signals of the PHY chip in the "3.5.22 Ethernet Interface" section. |
 | 19/04/2025 |        V1.5        | Adding 2.4.5 "ESD Characteristics” in Chapter 2 "Introduction to FET3568 - C SoM", supplementing a detailed description of the ESD characteristics of the SoM's pins. |
 | 01/06/2023 |        V1.6        | 1\. Adding the configuration information of the industrial - grade 1GB + 8GB to the ordering information; <br />2. Adding the configuration information of the commercial 1GB + 8GB to the ordering information. |
 | 07/06/2023 |        V1.7        | Modifying the description of the supported CAN.              |
@@ -695,7 +695,7 @@ Power supply voltage: DC 12V.
 
 The antenna board is used for the installation and fixation of 4G and 5G antennas. Its external dimensions are 20mm×140mm. For more detailed dimensions, please refer to the figure below:
 
-Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
+Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the SoM. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
 
@@ -965,7 +965,7 @@ The maximum power of the Speaker is 1.3W (8Ω). If you need to connect an extern
 - **The filtering circuit for speaker output should be close to the SoM  
   , while the ESD protection devices should be close to the connection socket. Pay attention to the specifications of the magnetic beads FB8 and FB9 in the figure. The current should be no less than 1.5A. The maximum power of the speaker is 1.3W (8Ω). If you need higher power or better output sound quality, it is recommended to obtain the signal from the headphone and expand an analog or digital power amplifier externally;**
 
-- **The DC - blocking capacitors C103 and C104 of the MIC must not be deleted and should be placed close to the core board during layout.**
+- **The DC - blocking capacitors C103 and C104 of the MIC must not be deleted and should be placed close to the SoM during layout.**
 
 #### 3.5.16 4G/5G
 
@@ -1145,7 +1145,7 @@ Please ensure level matching between the I2C on the SoM side and the I2C of the 
 
 **2. I2C/UART/CAN/SPI and Other Interface Group Selection**
 
-On the core board, different pins of I2C/UART/CAN/SPI interfaces are multiplexed in several different power domains, and the suffix \_ M0/\_ M1 is used to distinguish different multiplexing positions. M0 and \_M1 cannot be used together. When allocating, choose either M0 or \_M1, not a mix where some signals use M0 and others use M1.
+On the SoM, different pins of I2C/UART/CAN/SPI interfaces are multiplexed in several different power domains, and the suffix \_ M0/\_ M1 is used to distinguish different multiplexing positions. M0 and \_M1 cannot be used together. When allocating, choose either M0 or \_M1, not a mix where some signals use M0 and others use M1.
 
 For each function, adding the suffixes "M0", "M1", or "M2" to its name indicates that the same function is multiplexed onto different IOs. Only one of these multiplexed options can be selected at a time. For example, when selecting the UART2 function, the combination of UART2\_TX\_M0 and UART2\_RX\_M0 must be chosen. The combination of UART2\_TX\_M0 and UART2\_RX\_M1 is not supported.
 

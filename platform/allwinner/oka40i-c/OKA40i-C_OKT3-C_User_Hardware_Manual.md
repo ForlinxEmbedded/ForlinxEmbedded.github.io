@@ -184,7 +184,7 @@ See the appendix for the connector dimension drawing.
 | TVOUT                                                      | 4            | 4-channel CVBS output, supporting NTSC and PAL system        |
 | CAMERA                                                     | ≤2           | CSI0: 1 x 8/16-bit parallel interface (DVP), supporting up to 5-Megapixel, supporting 1080p @ 30fps;<br/>CSI1: 1 x 8/16/24-bit parallel interface (DVP), supporting up to 5-Megapixel, supporting 720p @ 30fps. |
 | TVIN                                                       | 4            | 4-channel CVBS input, supporting NTSC and PAL system.        |
-| SD/MMC/SDIO                                                | ≤4           | It supports up to 50 MHz for the 1-bit or 4-bit transmission mode specifications of SD and SDIO cards:<br/>SD/MMC/SDIO0: 4-bit data bus (used for programming);<br/>SD/MMC/SDIO1: 4-bit data bus;<br/>SD/MMC/SDIO2: 8-bit data bus (occupied by the eMMC on the core board);<br/>SD/MMC/SDIO3: 4-bit data bus. |
+| SD/MMC/SDIO                                                | ≤4           | It supports up to 50 MHz for the 1-bit or 4-bit transmission mode specifications of SD and SDIO cards:<br/>SD/MMC/SDIO0: 4-bit data bus (used for programming);<br/>SD/MMC/SDIO1: 4-bit data bus;<br/>SD/MMC/SDIO2: 8-bit data bus (occupied by the eMMC on the SoM);<br/>SD/MMC/SDIO3: 4-bit data bus. |
 | USB HOST                                                   | 2            | USB 2.0 （USB 2.0（up to 480 Mbps）                          |
 | USB OTG                                                    | 1            | USB 2.0 （up to 480 Mbps）                                   |
 | I2S/PCM                                                    | ≤2           | Supports up to 2 I2S/PCM Audio;                              |
@@ -900,7 +900,7 @@ Supported audio formats
 
 **4\. Ensure a distance of more than 3W between differential pairs;**
 
-**5\. The length of the HDMI signal traces should be less than 3000 mil. The differential traces should run in parallel from the core board to the HDMI socket as straight as possible. Do not deliberately use “serpentine traces” just for the sake of equal length. The equal - length error within the HDMI differential pair should be less than 200 mil, and the equal - length error between pairs should be less than 1000 mil;**
+**5\. The length of the HDMI signal traces should be less than 3000 mil. The differential traces should run in parallel from the SoM to the HDMI socket as straight as possible. Do not deliberately use “serpentine traces” just for the sake of equal length. The equal - length error within the HDMI differential pair should be less than 200 mil, and the equal - length error between pairs should be less than 1000 mil;**
 
 **6.The number of vias for differential traces should not exceed 2.**
 

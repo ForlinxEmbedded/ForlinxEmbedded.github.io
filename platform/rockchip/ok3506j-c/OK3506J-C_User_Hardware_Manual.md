@@ -161,7 +161,7 @@ When you have multiple functional expansion requirements, you can refer to the u
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Connector**| **Pin Number**
 |:----------:|:----------:|:----------:|----------|:----------:|----------
 | Power| VCC5V0\_SYS| Power Input| The power supply pin for the SoM is 5V, and the carrier board provides a current of no less than 2.0A.| P2| 1,2,3,4
-| Power enable| VCC\_3V3| Power output| An enable signal used only to control the external power supply of the carrier board and output by the core board| P2| 9
+| Power enable| VCC\_3V3| Power output| An enable signal used only to control the external power supply of the carrier board and output by the SoM| P2| 9
 | Ground| GND| Ground| SoM power ground and signal ground, all GND pins need to be connected| | 
 
 **Function Control Pin**

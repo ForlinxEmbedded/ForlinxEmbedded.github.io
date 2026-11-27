@@ -79,7 +79,7 @@ root@ok3588-recovery:/# ./update.sh
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/006_EN.png)
 
-After the copy is complete, the blue LED on the core board changes from steady on to a heartbeat pattern.
+After the copy is complete, the blue LED on the SoM changes from steady on to a heartbeat pattern.
 
 ## 3. Generate the Complete update.img Image
 Insert the microSD card into the PC and attach it to the virtual machine.

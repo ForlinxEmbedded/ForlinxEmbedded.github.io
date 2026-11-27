@@ -478,7 +478,7 @@ OK-yocto-source$ tree -L 2
 | **Meta Layer Name**| **Function Description**|
 |:----------|:----------|
 | meta-rockchip| Community-maintained Rockchip SoC support layer.|
-| meta-forlinx-rk| Forlinx Embedded BSP layer, deeply customised for the RK3588 core board.|
+| meta-forlinx-rk| Forlinx Embedded BSP layer, deeply customised for the RK3588 SoM.|
 
 ##### 1.2.4 Other Directories
 
@@ -742,7 +742,7 @@ Available Rockchip chips:
 Select chip [1-4]:
 ```
 
-Select the appropriate option based on the target core board:
+Select the appropriate option based on the target SoM:
 
 + If compiling for OK3588-C or OK3588-C2, enter the number 1 to select the “rk3588” option;
 + If compiling for OK3588S2-C, enter the number 2 to select the “rk3588s2” option.

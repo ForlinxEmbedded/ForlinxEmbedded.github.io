@@ -297,7 +297,7 @@ For various functional expansion requirements, please refer to the user document
 **Power Pin**
 | **Function** | **Signal Name** |   **I/O**    | **Default Function**                                         | Pin Number |
 | :----------: | :-------------: | :----------: | ------------------------------------------------------------ | :--------: |
-|    Power     |   VCC5V0_SYS    | Power Input  | The core board power supply pins are **5V**, and the current of the carrier board should **not less than 2.5A**. |            |
+|    Power     |   VCC5V0_SYS    | Power Input  | The SoM power supply pins are **5V**, and the current of the carrier board should **not less than 2.5A**. |            |
 |              |    VCC3V3_SD    | Power Output | It is only used for SD card power supply, with a maximum output current capability of **500mA**. |            |
 |              |       GND       |    Ground    | For the SoM power ground and signal ground, **all GND pins must be connected**. |            |
 
@@ -606,7 +606,7 @@ To ensure soldering yield, please refer to the following specifications for sten
 
 **Hole Opening Scheme**
 
-Thickness: Use a 0.1/0.15mm step stencil, with the core board mounting area uniformly designed for a 0.15mm upper step;
+Thickness: Use a 0.1/0.15mm step stencil, with the SoM mounting area uniformly designed for a 0.15mm upper step;
 
 LCC Pad Aperture: The opening width should be 0.6mm, and the length should extend outward by 2.15mm along the edge of the pad;
 

@@ -756,7 +756,7 @@ Since the SoM retains only R1, when designing your own carrier board must ensure
 
 **WiFi-BT Design Guide**
 
-- The AP-CK32K-OUT pin led out from the core board is the output for the T536’s internal 32.768 kHz clock. It is an open-drain (OD) output. If used in conjunction with a WiFi-BT module, an external pull-up resistor is mandatory.
+- The AP-CK32K-OUT pin led out from the SoM is the output for the T536’s internal 32.768 kHz clock. It is an open-drain (OD) output. If used in conjunction with a WiFi-BT module, an external pull-up resistor is mandatory.
 
 
 - If this function is not used, the pin can be left floating.
