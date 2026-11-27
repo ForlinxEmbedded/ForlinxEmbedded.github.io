@@ -67,7 +67,7 @@ Applications include:
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720083224368_f41b6fc3_34a9_4a8d_a6df_785c4c56986f.png)
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1732777917855_1c268f9a_0f6e_4592_bf79_e613e163bb56.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854_6.png)
 
 Dimensions: 70 mm×46 mm, tolerance ±0.15 mm. For detailed dimensions, refer to the DXF file.
 
@@ -81,7 +81,7 @@ Refer to the development board design and the figures below for SMD nut specific
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1720055814219_26674965_242f_4a82_9c44_743672b7717c.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854_8.png)
 
 ### 2.3 Performance Parameters
 #### 2.3.1 System Clock Frequency
@@ -174,9 +174,9 @@ The values in this table are based on the hardware design or theoretical process
 ### 2.5 FET527-C SoM Pin Definitions
 #### 2.5.1 FET527-C SoM Pin Schematic Diagram
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197352551-0105554a-7581-4aca-87ba-d60297f315a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197352551_0105554a_7581_4aca_87ba_d60297f315a9.png)
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197358610_2b228097_0f30_4858_ac8d_b3d5874db65a.png)
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197365179-4403f109-1037-44ce-beab-1968dd0424ab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197365179_4403f109_1037_44ce_beab_1968dd0424ab.png)
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1721197371652_05757a9c_bfa4_4c62_855a_14a7de511987.png)
 
 #### 2.5.2 FET527-C SoM Pin Function Description
@@ -233,7 +233,7 @@ Power supply voltage: DC 12 V.
 ### 3.3 Heatsink Dimensions
 The OK527x-C carrier board provides two 3.2 mm mounting holes for a heatsink. Install a heatsink as required by the operating environment. Place an electrically insulating, thermally conductive silicone pad between the heatsink and the SoM. The Forlinx heatsink measures 39 × 39 × 23 mm. See the figure below for detailed dimensions: 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-16.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854_16.png)
 
 ### 3.4 Carrier Board Resources
 | Function | Quantity | Parameters |
@@ -299,7 +299,7 @@ The OK527x-C attempts to boot from the following devices in order:
 The TF card has boot priority over eMMC. If a TF card is inserted during normal operation rather than programming, ensure that it does not contain a BOOT partition. To create a TF card boot image, refer to the software user manual.
 
 #### 3.5.3 Function Keys
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854_18.png)
 
 Press AP-RESET to reset and restart the system. Press FEL to enter forced upgrade mode for system programming over USB from a PC. Use PWRON to power the system on or off.
 
@@ -347,7 +347,7 @@ The TF card interface uses the processor SDC0 channel. The TF card must be power
 The carrier board connects an external RTC via TWI0. D4 allows the RTC to be powered by either VCC_3V3 or a coin cell. The coin cell maintains RTC power when the carrier board is off. The default design uses a PCF8563T/5 RTC and a CR2032 coin cell.
 
 #### 3.5.8 LRADC Keys
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854-26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok527n-c/ok527n-c_user-hardware_manual_en/1795749537854_26.png)
 
 The carrier board uses two ADCKEY signals. The ADC identifies each key by sampling the voltage produced by its corresponding resistor divider.
 
