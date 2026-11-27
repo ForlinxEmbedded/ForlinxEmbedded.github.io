@@ -19,6 +19,8 @@ HARDWARE
 .. toctree::
    :caption: HARDWARE
    :maxdepth: 2
+
+   ok527n-c_user-hardware_manual_en
    
 SOFTWARE
 ------------
